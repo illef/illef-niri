@@ -1,0 +1,9 @@
+[Unit]
+Description=Illef Niri Wayland Compositor
+Requisite=niri.service
+BindsTo=niri.service
+After=niri.service
+
+[Service]
+ExecStart=/usr/local/bin/illef-niri
+Restart=on-failure
